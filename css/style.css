@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --primary-color: #2c347c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+span{
+  color: var(--primary-color);
+}
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.page-left{
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-left-content{
+   padding-top: 65%;
+   padding-bottom: 60%;
+
+}
+
+@media screen and (max-width: 600px){
+  .page-left-content{
+    padding-top: 25%;
+    padding-bottom: 30%;
+  }
+}
+
+.page-left-content h1{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.admission-logo{
+    max-width: 200px;
+    padding: 20px 0;
+    /* margin: 0 auto; */
+}
+
+.select-heading{
+    color: var(--primary-color);
+}
+
+/*buttons*/
+.button-icon {
+    display: flex;
+    border: 3px var(--primary-color) solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 40px;
+  }
+  
+  .button-icon:hover {
+    border-color: black;
+  }
+
+  
+  .button-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+  
+  .side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: black;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+  }
+  
+  .front {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }
+  
+    
